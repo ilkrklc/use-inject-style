@@ -1,0 +1,27 @@
+name: NPM Publish Workflow
+on:
+  push:
+    tags:
+      - v*.*.*
+    paths-ignore:
+      - 'README.md'
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Package
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x',
+          registry-url: 'https://registry.npmjs.org'
+        run: |
+          npm ci
+          npm run build
+
+      - name: Publish to NPM
+        run: |
+          npm publish
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
