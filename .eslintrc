@@ -1,5 +1,6 @@
 {
   "extends": ["react-app", "prettier"],
+  "parser": "@typescript-eslint/parser",
   "plugins": ["prettier"],
   "rules": {
     "import/no-named-default": 0,
