@@ -22,19 +22,13 @@ export abstract class StyleUtils {
    * @static
    */
   static findRuleIndex(sheet: CSSStyleSheet, rule: string): number | -1 {
-    // initialize index as not found
     let index: number | -1 = -1;
 
-    // iterate rules
     for (let i = 0; i < sheet.cssRules.length; i++) {
       const cssRule = sheet.cssRules[i];
 
-      // check rule
       if (cssRule && this.parseRule(cssRule.cssText) === this.parseRule(rule)) {
-        // store found index
         index = i;
-
-        // break unnecessary iterations
         break;
       }
     }
