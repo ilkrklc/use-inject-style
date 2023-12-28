@@ -1,6 +1,25 @@
-# useInjectStyle
+# useInjectStyle ![GitHub](https://img.shields.io/github/license/ilkrklc/use-inject-style) ![npm version](https://img.shields.io/npm/v/use-inject-style) ![npm](https://img.shields.io/npm/dw/use-inject-style) ![npm bundle size](https://img.shields.io/bundlephobia/min/use-inject-style)
 
-A react hook to inject style sheet on demand.
+## Description
+
+`useInjectStyle` is a React hook that allows you to inject a style sheet on demand. This can be particularly useful when you want to conditionally apply styles based on certain state or props in your React component.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Syntax](#syntax)
+- [Contributing](#contributing)
+- [Pull Request Guidelines](#pull-request-guidelines)
+- [License](#license)
+
+## Installation
+
+To install `useInjectStyle` using npm, run the following command:
+
+```bash
+npm i use-inject-style
+```
 
 ## Usage
 
@@ -48,7 +67,7 @@ Injected style dom element identifier
 
 ## Contributing
 
-Please review [code of conduct](.github/CODE_OF_CONDUCT.md) and [contributing guide](.github/CONTRIBUTING.md) so that you can understand what actions will and will not be tolerated.
+We welcome contributions to `useInjectStyle`! Please review [code of conduct](.github/CODE_OF_CONDUCT.md) and [contributing guide](.github/CONTRIBUTING.md) so that you can understand what actions will and will not be tolerated.
 
 ### Pull Request Guidelines
 
@@ -63,4 +82,4 @@ Please review [code of conduct](.github/CODE_OF_CONDUCT.md) and [contributing gu
 
 ## License
 
-Divisor is [MIT licensed](./LICENSE).
+`useInjectStyle` is [MIT licensed](./LICENSE).
