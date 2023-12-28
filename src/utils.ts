@@ -30,7 +30,7 @@ export abstract class StyleUtils {
       const cssRule = sheet.cssRules[i];
 
       // check rule
-      if (this.parseRule(cssRule.cssText) === this.parseRule(rule)) {
+      if (cssRule && this.parseRule(cssRule.cssText) === this.parseRule(rule)) {
         // store found index
         index = i;
 
