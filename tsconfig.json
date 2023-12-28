@@ -13,9 +13,8 @@
     "noUncheckedIndexedAccess": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
-    "rootDir": "src",
     "baseUrl": "src",
-    "outDir": "dist",
+    "outDir": "dist"
   },
   "include": ["src"],
   "exclude": ["node_modules", "./**/*.js"]
