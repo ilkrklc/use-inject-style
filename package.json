@@ -31,10 +31,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "lint": "eslint ./src --ext ts,tsx --max-warnings 0",
-    "lint:fix": "npm lint --fix",
-    "format": "prettier --check \"src/**/*.{ts,tsx}\"",
-    "format:fix": "prettier --write \"src/**/*.{ts,tsx}\""
+    "lint": "eslint src/"
   },
   "peerDependencies": {
     "react": ">=17.0.2",
