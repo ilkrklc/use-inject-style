@@ -2,7 +2,7 @@
   "name": "use-inject-style",
   "version": "1.0.2",
   "description": "A hook to inject style sheet on demand.",
-  "main": "dist/index.jsx",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "type": "module",
